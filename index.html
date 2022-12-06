@@ -4,53 +4,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Office Tools</title>
-    <link rel="stylesheet" href="index.css">
+    <title>Office Tools - Text</title>
 </head>
 
+<!-- Four areas: navbar, sidebar, main area, footer -->
 <body>
-    <script src="index.js" defer></script>
-<!-- allFlex for the whole page of flexbox -->
-<div id="allFlex">
+    
+<!-- Flexbox containing whole page -->
+<div id="wholeFlex">
+
+    <!-- Flexbox containing navbar only -->
     <div id="navBar">
-        <div id="navLeft">
-            <h1>Office Tools</h1>
-        </div>
-        <div id="navRight">
-            <h3>About</h3>
-            <h3>Contact Us</h3>
-            <h3>Donate</h3>
-        </div>
+
     </div>
 
-    <!-- sideAndMain to house the sidebar and main area and flex them horizontally -->
-<div id="sideAndMain">
-    <div id="sideBar">
-        <button>Text Tools</button>
-        <button>Media Tools</button>
-        <button>Other</button>
+    <!-- Flexbox containing sidebar and main area-->
+    <div id="sideMain">
+
+        <!-- Flexbox containing sidebar elements -->
+        <div id="sideBar">
+
+        </div>
+
+        <!-- Flexbox containing main area elements -->
+       <div id="mainArea">
+
+        </div>
+
     </div>
 
-    <div id="mainArea">
-        <div class="toolTitle">
-            <p>Text Tools</p>
-        </div>
-        <div>
-            <textarea name="text" id="textArea" cols="60" rows="15">Enter your text here...
-            </textarea>
-            <p id="charCount">0</p>
-            <br>
-            <button id="btnUpperCase">Make upper case</button>
-            <button id="btnLowerCase">Make lower case</button>
-        </div>
+    <!-- Flexbox containing footer only -->
+    <div id="footer">
+
     </div>
 
-    <div id="resultArea">
-        <p>Result</p>
-        <!-- append result here -->
-        <p id="resultText"></p>
-    </div>
 </div>
-</div>
+
 </body>
 </html>
