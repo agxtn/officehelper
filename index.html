@@ -7,7 +7,7 @@
     <title>Office Tools - Text</title>
 </head>
 
-<!-- Four areas: navbar, sidebar, main area, footer -->
+<!-- Four areas: navbar, sidebar, user area, result area, footer -->
 <body>
     
 <!-- Flexbox containing whole page -->
@@ -15,27 +15,44 @@
 
     <!-- Flexbox containing navbar only -->
     <div id="navBar">
-
+        <h1 class="header">Office Tools</h1>
+        <button id="aboutUs">About Us</button>
+        <button id="donate">Donate</button>
     </div>
 
-    <!-- Flexbox containing sidebar and main area-->
-    <div id="sideMain">
-
+    <!-- Flexbox containing sidebar, user area and result area-->
+    <div id="sideUserResult">
         <!-- Flexbox containing sidebar elements -->
         <div id="sideBar">
-
+            <button class="btnTools" id="textTools">Text Tools</button>
+            <button class="btnTools" id="mediaTools">Media Tools</button>
+            <button class="btnTools" id="otherTools">Other Tools</button>
         </div>
 
-        <!-- Flexbox containing main area elements -->
-       <div id="mainArea">
+        <!-- Flexbox containing user area elements -->
+       <div id="userArea">
+            <h3 class="header">Text Tools</h3>
+            <p class="textA">Your text:</p>
+            <textarea name="textArea" id="textArea" cols="50" rows="20">Place your text here</textarea>
+            <p class="textA">0 characters</p>
+            <button class="btnMethod">Convert to upper case</button>
+            <button class="btnMethod">Convert to lower case</button>
+            <p class="textA">Does my text contain</p>
+            <input type="text">
+       </div>
 
-        </div>
+       <div id="resultArea">
+            <p class="textA">Result:</p>
+            <p class="textB" id="resultText"></p>
+            <button class="btnMethod">Copy</button>
+       </div>
 
     </div>
 
     <!-- Flexbox containing footer only -->
     <div id="footer">
-
+        <p class="textC">Office Tools 2022</p>
+        <p class="textC">github.com/agxtn</p>
     </div>
 
 </div>
