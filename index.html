@@ -4,10 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Office Helper</title>
+    <title>Office Tools</title>
+    <link rel="stylesheet" href="index.css">
 </head>
-<body>
 
+<body>
+    <script src="index.js" defer></script>
+<!-- allFlex for the whole page of flexbox -->
+<div id="allFlex">
     <div id="navBar">
         <div id="navLeft">
             <h1>Office Tools</h1>
@@ -19,6 +23,8 @@
         </div>
     </div>
 
+    <!-- sideAndMain to house the sidebar and main area and flex them horizontally -->
+<div id="sideAndMain">
     <div id="sideBar">
         <button>Text Tools</button>
         <button>Media Tools</button>
@@ -27,15 +33,24 @@
 
     <div id="mainArea">
         <div class="toolTitle">
-            <p>Tool Title Here</p>
+            <p>Text Tools</p>
         </div>
         <div>
-            <textarea name="text" id="textArea" cols="60" rows="15">
-                Enter your text here...
+            <textarea name="text" id="textArea" cols="60" rows="15">Enter your text here...
             </textarea>
+            <p id="charCount">0</p>
             <br>
-            <button id="transform">Go</button>
+            <button id="btnUpperCase">Make upper case</button>
+            <button id="btnLowerCase">Make lower case</button>
         </div>
     </div>
+
+    <div id="resultArea">
+        <p>Result</p>
+        <!-- append result here -->
+        <p id="resultText"></p>
+    </div>
+</div>
+</div>
 </body>
 </html>
