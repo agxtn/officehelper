@@ -1,25 +1,47 @@
+// Text tools
 
-//Real time character counter below text input area
-let varUserText = document.getElementById("textArea");
+let userText = document.getElementById("textArea");
+//Text area char counter
 
-varUserText.addEventListener("input", () => {
-    let varTextLength = (textArea.value).length;
-    document.getElementById("charCount").textContent = `${varTextLength}`;
-});
+userText.addEventListener("input", () => {
+    let charCount = (userText.value).length;
+    document.getElementById("charCounter").textContent = `${charCount}`;
+
+})
 
 
-//Convert text input to upper case
-let varUpperCase = document.getElementById("btnUpperCase");
+//Convert to upper case
+let convertUpperBtn = document.getElementById("convertUpper");
 
-varUpperCase.addEventListener("click", function () {
-        let varResult = (varUserText.value).toUpperCase();
-        document.getElementById("resultText").textContent = `${varResult}`;
-    })
+convertUpperBtn.addEventListener("click", () => {
 
-    //Convert text input to lower case
-let varLowerCase = document.getElementById("btnLowerCase");
+   let convertedUpper = (userText.value).toUpperCase();
 
-varLowerCase.addEventListener("click", function () {
-        let varResult = (varUserText.value).toLowerCase();
-        document.getElementById("resultText").textContent = `${varResult}`;
-    })
+   document.getElementById("resultText").textContent = `${convertedUpper}`;
+})
+
+
+//Convert to lower case
+let convertLowerBtn = document.getElementById("convertLower");
+
+convertLowerBtn.addEventListener("click", () => {
+
+    let convertedLower = (userText.value).toLowerCase();
+
+    document.getElementById("resultText").textContent = `${convertedLower}`;
+
+})
+
+
+//If user text includes
+
+
+let stringToFind = document.getElementById("doesContain")
+
+stringToFind.addEventListener("input", () => {
+
+    let doesContainResult = (userText.value).includes(stringToFind);
+
+    document.getElementById("containResult").textContent = `${doesContainResult}`;
+
+})
