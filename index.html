@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Office Tools - Text</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js" defer></script>
+   
 </head>
 
 <!-- Four areas: navbar, sidebar, user area, result area, footer -->
@@ -16,8 +19,8 @@
     <!-- Flexbox containing navbar only -->
     <div id="navBar">
         <h1 class="header">Office Tools</h1>
-        <button id="aboutUs">About Us</button>
-        <button id="donate">Donate</button>
+        <button class="btnNav" id="aboutUs">About Us</button>
+        <button class="btnNav" id="donate">Donate</button>
     </div>
 
     <!-- Flexbox containing sidebar, user area and result area-->
@@ -33,12 +36,19 @@
        <div id="userArea">
             <h3 class="header">Text Tools</h3>
             <p class="textA">Your text:</p>
-            <textarea name="textArea" id="textArea" cols="50" rows="20">Place your text here</textarea>
-            <p class="textA">0 characters</p>
-            <button class="btnMethod">Convert to upper case</button>
-            <button class="btnMethod">Convert to lower case</button>
-            <p class="textA">Does my text contain</p>
-            <input type="text">
+            <textarea name="textArea" id="textArea" cols="69" rows="15">Place your text here</textarea>
+            <p class="textA" id="charCounter">0 characters</p>
+            <button class="btnMethod" id="convertUpper">Convert all to upper case</button>
+            <button class="btnMethod" id="convertLower">Convert all to lower case</button>
+            <button class="btnMethod" id="convertFirstUpper">Upper case first letters</button>
+            <button class="btnMethod" id="convertRestLower">Lower case all except first letters</button>
+            <p class="textA" cols>Does my text contain</p>
+            
+            
+            <!-- <input type="text" id="doesContain"> 
+            <button class="btnMethod" id="checkText">Check</button>
+            <p class="textB" id="containResult">?</p> -->
+            
        </div>
 
        <div id="resultArea">
