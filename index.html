@@ -13,28 +13,24 @@
 <!-- Four areas: navbar, sidebar, user area, result area, footer -->
 <body>
     
-<!-- Flexbox containing whole page -->
-<div id="wholeFlex">
 
-    <!-- Flexbox containing navbar only -->
-    <div id="navBar">
+
         <h1 class="header">Office Tools</h1>
-        <button class="btnNav" id="aboutUs">About Us</button>
-        <button class="btnNav" id="donate">Donate</button>
-    </div>
 
-    <!-- Flexbox containing sidebar, user area and result area-->
-    <div id="sideUserResult">
-        <!-- Flexbox containing sidebar elements -->
-        <div id="sideBar">
-            <button class="btnTools" id="textTools">Text Tools</button>
-            <button class="btnTools" id="mediaTools">Media Tools</button>
-            <button class="btnTools" id="otherTools">Other Tools</button>
-        </div>
-
-        <!-- Flexbox containing user area elements -->
+   
+        <!-- Flexbox background 2 -->
        <div id="userArea">
-            <h3 class="header">Text Tools</h3>
+            <div class="dropdown">
+                <button class="dropbtn">
+                    Text Tools
+                </button>
+                <div class="dropdownContent">
+                    <a href="otherTools.html">Other Tools</a>
+                </div>    
+
+            </div>
+
+
             <p class="textA">Your text:</p>
             <textarea name="textArea" id="textArea" cols="69" rows="15">Place your text here</textarea>
             <p class="textA" id="charCounter">0 characters</p>
@@ -42,29 +38,19 @@
             <button class="btnMethod" id="convertLower">Convert all to lower case</button>
             <button class="btnMethod" id="convertFirstUpper">Upper case first letters</button>
             <button class="btnMethod" id="convertRestLower">Lower case all except first letters</button>
-            <p class="textA" cols>Does my text contain</p>
-            
-            
-            <!-- <input type="text" id="doesContain"> 
-            <button class="btnMethod" id="checkText">Check</button>
-            <p class="textB" id="containResult">?</p> -->
-            
-       </div>
-
-       <div id="resultArea">
+            <div id="resultArea">
             <p class="textA">Result:</p>
             <p class="textB" id="resultText"></p>
             <button class="btnMethod">Copy</button>
        </div>
+           
+        
+            
+       </div>
+
+       
 
     </div>
-
-    <!-- Flexbox containing footer only -->
-    <div id="footer">
-        <p class="textC">Office Tools 2022</p>
-        <p class="textC">github.com/agxtn</p>
-    </div>
-
 </div>
 
 </body>

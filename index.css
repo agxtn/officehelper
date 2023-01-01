@@ -1,6 +1,8 @@
 body {
     margin: 0;
     background-image: url("officetoolsbg.jpg");
+    background-size: cover;
+    background-position: center;
 }
 
 /* Flex Divs */
@@ -11,67 +13,100 @@ body {
     flex-grow: 1;
 }
 
-#navBar {
-    display: flex;
-    background-color: #2b2b2b;
-}
 
 #sideUserResult { 
     display: flex;
     height: 800px;
 }
 
-#sideBar {  
-    display: flex;
-    background-color: rgba(59, 59, 59, 0.514);
-    flex-direction: column;
-    padding-top: 10px;
-}
 
 #userArea {
     display: flex;
+    background-color: #313131;
+    border-radius: 10px;
+    opacity: 95%;
     flex-direction: column;
     flex: 1;
-    padding: 20px 50px 50px 50px;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-bottom: 50px;
+    padding: 80px 100px 50px 100px;
 }
 
 #resultArea{ 
     display: flex;
     flex-direction: column;
     flex: 1;
-    padding: 74px 50px 50px 50px;
+    padding: 74px 50px 50px 0px;
 }
 
 #footer{
     text-align: center;
-    background-color: #2b2b2b;
     font-family: Arial, Helvetica, sans-serif;
 }
-
 /* Elements */
 
 h1 {
-    margin-left: 25px;
+   text-align: center;
+   margin-top: 50px;
+   text-shadow: 2px 2px 2px #2b2b2b;
+   font-size: 69px;
 }
 
 .header {
     color: #f1c100;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: cursive;
 }
 
-#aboutUs {
-    margin-left: 1550px;
-}
 
 button {
     color: white;
 }
 
-.btnNav {
-    background-color: #2b2b2b;
-    border: none;
-    margin: 10px;
-    
+.dropbtn {
+    background-color: #c497ff;
+
+    color: rgb(7, 0, 0);
+    padding: 3px 20px 3px 20px;
+    font-size: 16px;
+    border: 2px;
+    border-color: #f1c100;
+    border-style: solid;
+  }
+  
+.dropdown {
+    position: relative;
+    font-family: arial;
+    font-style: bold;
+    display: inline-block;
+  }
+  
+.dropdownContent {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+.dropdownContent a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+.dropdownContent a:hover {
+    background-color: #c497ff;
+}
+  
+.dropdown:hover .dropdownContent {
+    display: block;
+}
+  
+.dropdown:hover .dropbtn {
+    background-color: #f2f6f7;
 }
 
 .btnTools {
@@ -82,13 +117,13 @@ button {
 }
 
 .textA {
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     font-weight: bold;
-    font-family: cursive;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .textB {
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -104,10 +139,6 @@ button {
     margin: 5px 5px 5px 0px;
 }
 
-#doesContain {
-    width: 300px;
-}
-/* Other Tools */
 
 #rngResult {
     color: rgb(23, 255, 23);
