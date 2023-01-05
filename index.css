@@ -44,6 +44,14 @@ body {
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
 }
+
+.methodsArea{
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 50px;
+}
+
+
 /* Elements */
 
 h1 {
@@ -56,6 +64,7 @@ h1 {
 .header {
     color: #f1c100;
     font-family: cursive;
+    margin-bottom: 30px;
 }
 
 
@@ -65,7 +74,6 @@ button {
 
 .dropbtn {
     background-color: #c497ff;
-
     color: rgb(7, 0, 0);
     padding: 3px 20px 3px 20px;
     font-size: 16px;
@@ -75,10 +83,12 @@ button {
   }
   
 .dropdown {
+    align-self: baseline;
     position: relative;
     font-family: arial;
     font-style: bold;
     display: inline-block;
+    margin-bottom: 40px;
   }
   
 .dropdownContent {
@@ -128,8 +138,12 @@ button {
 }
 
 .textC {
-    color: wheat;
-    font-size: small;
+    color: rgb(0, 0, 0);
+    font-size: large;
+    text-align: center;
+    margin-bottom: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 2px 2px 2px #fcf8f8;
 }
 
 .btnMethod {
@@ -139,9 +153,17 @@ button {
     margin: 5px 5px 5px 0px;
 }
 
-
+#resultText{
+    margin-bottom: 30px;
+}
 #rngResult {
     color: rgb(23, 255, 23);
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+.yellow{
+    background-color: yellow;
+    height: 10px;
+    width: 10px;
 }
