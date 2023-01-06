@@ -5,35 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Office Tools - Text</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="otherTools.js" defer></script>
+
 </head>
 
-<!-- Four areas: navbar, sidebar, user area, result area, footer -->
+
 <body>
-    
-<!-- Flexbox containing whole page -->
-<div id="wholeFlex">
 
-    <!-- Flexbox containing navbar only -->
-    <div id="navBar">
-        <h1 class="header">Office Tools</h1>
-        <button id="aboutUs">About Us</button>
-        <button id="donate">Donate</button>
-    </div>
-
-    <!-- Flexbox containing sidebar, user area and result area-->
-    <div id="sideUserResult">
-        <!-- Flexbox containing sidebar elements -->
-        <div id="sideBar">
-            <button class="btnTools" id="textTools">Text Tools</button>
-            <button class="btnTools" id="mediaTools">Media Tools</button>
-            <button class="btnTools" id="otherTools">Other Tools</button>
-        </div>
+    <h1 class="header">Office Tools</h1>
 
         <!-- Flexbox containing user area elements -->
        <div id="userArea">
-        
+        <div class="dropdown">
+            <button class="dropbtn">Utilities</button>
+            <div class="dropdownContent">
+            <a href="index.html">Text Modifier</a>
+            </div>
+        </div>
         <div id="rngArea">
-            <h3 class="header">Other Tools</h3>
+        
             <p class="textA">Random Number Generator</p>
             <p class="textB">Get a random number based on your set range</p>
             <input type="number">
@@ -44,20 +35,14 @@
         <div id="dpcArea">
             <p class="textA">Dead Pixel Checker</p>
             <p class="textB">Display various colors and check your screen for dead pixels</p>
+            <div id="dpcDiv"></div>
             <button class="btnMethod" id="dpcCheck">Go</button>
+            
+            
         </div>
 
        </div>
-
-
     </div>
-
-    <!-- Flexbox containing footer only -->
-    <div id="footer">
-        <p class="textC">Office Tools 2022</p>
-        <p class="textC">github.com/agxtn</p>
-    </div>
-
 </div>
 
 </body>
