@@ -13,13 +13,6 @@ body {
     flex-grow: 1;
 }
 
-
-#sideUserResult { 
-    display: flex;
-    height: 800px;
-}
-
-
 #userArea {
     display: flex;
     background-color: #313131;
@@ -38,11 +31,6 @@ body {
     flex-direction: column;
     flex: 1;
     padding: 74px 50px 50px 0px;
-}
-
-#footer{
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 .methodsArea{
@@ -162,8 +150,6 @@ button {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.yellow{
-    background-color: yellow;
-    height: 10px;
-    width: 10px;
+#dpcDiv{
+    background-color: red;
 }

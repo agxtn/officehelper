@@ -10,17 +10,13 @@
    
 </head>
 
-<!-- Four areas: navbar, sidebar, user area, result area, footer -->
 <body>
-    
-
-
     <h1 class="header">Office Tools</h1>
-   
-        <!-- Flexbox background 2 -->
-       <div id="userArea">
-            
 
+       <div id="userArea">            
+
+           
+        <!-- Dropdown links for user to select between text modifier mode or utilities mode -->
         <div class="dropdown">
             <button class="dropbtn">Text Modifier</button>
             <div class="dropdownContent">
@@ -28,9 +24,12 @@
             </div>
         </div>
           
+            <!-- Text area for user input -->
             <p class="textA">Your text:</p>
             <textarea name="textArea" id="textArea" cols="69" rows="15">Place your text here</textarea>
             <p class="textA" id="charCounter">0 characters</p>
+
+            <!--Buttons linked to JS methods-->
             <div class="methodsArea">
             <button class="btnMethod" id="convertUpper">Convert all to upper case</button>
             <button class="btnMethod" id="convertLower">Convert all to lower case</button>
@@ -38,6 +37,7 @@
             <button class="btnMethod" id="convertRestLower">Lower case all except first letters</button>
              </div>
         
+             <!--Text area for output-->
             <p class="textA">Result:</p>
             <textarea name="resultArea" id="resultText" cols="69" rows="15">Result</textarea>
             <button class="btnMethod" id="copyBtn">Copy</button>

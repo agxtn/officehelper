@@ -1,7 +1,5 @@
-// Text tools
-
+//This part shows a real time character counter
 let userText = document.getElementById("textArea");
-//Text area char counter
 
 userText.addEventListener("input", () => {
     let charCount = (userText.value).length;
@@ -68,25 +66,3 @@ copyButton.onclick = () => {
     navigator.clipboard.writeText(resultArea.value);
     alert("copied");
 }
-
-
-
-
-
-
-
-/*If user text includes
-
-let stringToFind = document.getElementById("doesContain");
-let checkBtn = document.getElementById("checkText");
-
-checkBtn.addEventListener("click", () => {
-
-    stringToFind = stringToFind.value;
-    let doesContainResult = (userText.value).includes(stringToFind);
-
-    document.getElementById("containResult").textContent = `${doesContainResult}`;
-
-}) */
-
-
